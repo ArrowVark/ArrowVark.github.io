@@ -21,6 +21,24 @@ body {
     background-size: 100% 270%;    */
     margin: 0%;
 }
+.quickLinks {
+    font-size: 20pt;
+    font-weight: 700;
+    display: inline-block;
+    margin-left: 15px;
+}
+.fmb {
+    float: right;
+    transform: translateY(24px) translateX(215px);
+    margin-right: 20px;
+    animation-name: fmbanim;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+.qlb {
+    display: flex;
+}
 /* .radialGradient {
     position: absolute;
     background: red;
@@ -43,8 +61,13 @@ body {
  .lines {
     background-image: repeating-linear-gradient(45deg,white, white 5px, transparent 5px, transparent 20px);
     height: 20px;
+    transform: translateX();
     margin-bottom: 20px;
-    margin-top: 30px;;
+    margin-top: 30px;
+    /* animation-name: right;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; */
  }
 p {
     color: white;
@@ -130,11 +153,43 @@ p {
         color: white;
     }
 }
+.vl {
+    border-left: 4px solid white;
+    height: 500px;
+    margin-left: 50%;
+    margin-top: 100px;
+}
+.marker {
+    border-radius: 100%;
+    height: 13px;
+    width: 13px;
+    background-color: white;
+    transform: translateX(-65%) translateY(50px);
+    transition-duration: .5s;
+}
+/* .marker:hover {
+    transition-duration: .5s;
+    transform: scale(2) translateX(-20%) translateY(16px);
+} */
 @keyframes robot {
     25% {
         transform: translateX(5px) rotate(10deg);
     }
     75% {
         transform: translateX(-5px) rotate(-10deg);
+    }
+}
+@keyframes right {
+    100% {
+        transform: translateX(100%);
+    }
+}
+@keyframes fmbanim {
+    0% {
+        transform: translateX(215px) translateY(24px);
+        color: transparent;
+    }
+    100% {
+        transform: translateX(0px) translateY(24px);
     }
 }
