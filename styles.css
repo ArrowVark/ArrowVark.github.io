@@ -30,15 +30,35 @@ body {
     background-repeat: no-repeat;
     z-index: -1;
 }
-p {
-    /* margin: 0px; */
-}
 .lines {
-    position: absolute;
     background-image: 
     repeating-linear-gradient(45deg,transparent, transparent 5px, rgba(7,9,27,1) 5px, rgba(7,9,27,1) 20px),
     linear-gradient(transparent, rgb(255, 255, 255), transparent);
     background-color: transparent;
-    height: 100px;
+    height: 50px;
     width: 100vw;
+}
+p {
+    color: white;
+}
+.box {
+    background-color: rgb(32, 33, 61);
+    border-radius: 20px;
+    width: auto;
+    height: 30vh;
+    transition-duration: .25s;
+    display: inline-block;
+    margin: 10px;
+    flex: 1;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.459);
+    
+}
+.box:hover {
+    transition-duration: .25s;
+    background-color: rgb(45, 46, 77);
+    transform: rotate(5deg) translateY(-20px) scale(1.07);
+    box-shadow: -7px 15px 15px rgba(0, 0, 0, 0.336);
+}
+.coding {
+    
 }
