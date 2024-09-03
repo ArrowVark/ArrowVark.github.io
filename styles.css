@@ -196,7 +196,7 @@ p {
     top: 1140px;
 }
 .marker:hover {
-    transform: scale(2);
+    transform: scale(1.5);
     box-shadow: 0px 0px 6px white;
 }
 /* .marker:hover {
