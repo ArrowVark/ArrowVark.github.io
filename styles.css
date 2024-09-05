@@ -234,6 +234,43 @@ p {
     z-index: 1;
     border: 2px solid rgb(86, 98, 119);
 }
+.skillIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    scale: .75;
+}
+.unity {
+    scale: .7;
+}
+.java {
+    scale: .5;
+    translate: 0px -13px;
+}
+.js {
+    scale: .65;
+    border-radius: 14px;
+}
+.arduino {
+    scale: .65;
+}
+.pathplanner {
+    scale: .7;
+}
+.frc {
+    translate: 0px 13px;
+    scale: .8;
+}
+.wpilib {
+    translate: 0px 5px;
+}
+.lua {
+    translate: -4px 4px;
+}
+.blender {
+    translate: 0px 7px;
+}
 @keyframes robot {
     25% {
         transform: translateX(5px) rotate(10deg);
