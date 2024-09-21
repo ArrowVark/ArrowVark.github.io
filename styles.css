@@ -19,7 +19,8 @@ body {
     background-position-y: 20%;
     background-repeat: no-repeat;
     background-size: 100% 270%;    */
-    height: 1250px;
+    /* height: 1250px; */
+    height: 900px;
     background-repeat: no-repeat;
     margin: 0%;
     background-image:
@@ -85,9 +86,10 @@ p {
     height: 250px;
     transition-duration: .25s;
     display: inline-block;
-    margin: 4px;
+    margin: 7px;
     flex: 1;
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.459);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.459),
+        inset 0px 0px 25px rgba(255, 255, 255, 0.079);
     font-weight: 200;
     font-size: 10pt;
     border: 2px solid rgb(44, 51, 79);
@@ -96,7 +98,8 @@ p {
     transition-duration: .25s;
     background-color: rgb(67, 82, 109);
     transform: rotate(5deg) translateY(-20px) scale(1.07);
-    box-shadow: -7px 15px 15px rgba(0, 0, 0, 0.336);
+    box-shadow: -7px 15px 15px rgba(0, 0, 0, 0.336),
+        inset 0px 0px 25px rgba(153, 194, 255, 0.23);
     z-index: 1;
     border: 2px solid rgb(86, 98, 119);
 }
@@ -215,13 +218,14 @@ p {
     backdrop-filter: blur(5px);
     border-radius: 20px;
     width: auto;
-    height: .78in;
-    width: .78in;
+    height: 75px;
+    width: 75px;
     transition-duration: .25s;
     display: inline-block;
     margin: 4px;
     flex: 1;
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.459);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.459),
+        inset 0px 0px 25px rgba(255, 255, 255, 0.079);
     font-weight: 200;
     font-size: 10pt;
     border: 2px solid rgb(44, 51, 79);
@@ -230,7 +234,8 @@ p {
     transition-duration: .25s;
     background-color: rgba(255, 255, 255, 0.073);
     transform: rotate(5deg) translateY(-20px) scale(1.07);
-    box-shadow: -7px 15px 15px rgba(0, 0, 0, 0.336);
+    box-shadow: -7px 15px 15px rgba(0, 0, 0, 0.336),
+        inset 0px 0px 25px rgba(153, 194, 255, 0.23);;
     z-index: 1;
     border: 2px solid rgb(86, 98, 119);
 }
@@ -240,6 +245,7 @@ p {
     justify-content: center;
     width: 100%;
     scale: .75;
+    scale: .55;
 }
 .unity {
     scale: .7;
@@ -292,4 +298,23 @@ p {
     100% {
         transform: translateX(0px) translateY(24px);
     }
+}
+.bigQuickLinks{
+    display: flex;
+
+    .box:first-child {
+        margin-left: 15px;
+    }
+    .box:last-child {
+        margin-right: 15px;;
+    }
+}
+.boxHeader {
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+.boxSubheader {
+    margin-left: 15px;
+    margin-top: 7px;
 }
